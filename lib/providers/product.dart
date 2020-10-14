@@ -17,6 +17,7 @@ class Product with ChangeNotifier {
     this.isFavorite = false,
   });
 
+  // ignore: non_constant_identifier_names
   void toggle_favorite() {
     isFavorite = !isFavorite;
     notifyListeners();
